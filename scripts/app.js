@@ -110,12 +110,44 @@ console.log(toonify('porky', 'thats all folks!'));
 */
 
 
-var array = ['my', 'head', 'hurts', 'lets', 'cure', 'it', 'with', 'beer'];
-array.reverse();
-console.log(array);
 
-function wordReverse () {
 
+
+
+var sentence = 'I need to get a little more sleep';
+
+function wordReverse(string) {
+    return sentence.reverse;
 }
 
+
+
+
 // Comment: I will continue this effort during the week. I have not given up yet! Mwahahaha!
+
+
+
+// round 5
+
+
+
+
+
+// round 6
+
+
+// functions review
+
+
+
+function tellFortune(numberOfChildren, partnerName, geoLocation, jobTitle) {
+    return 'You will be a ' + jobTitle + ' in ' + geoLocation + ', and marrried to ' + partnerName + ' with ' + numberOfChildren + ' kids.';
+}
+
+console.log(tellFortune(4, 'Rachel', 'Chicago', 'Web Developer'));
+console.log(tellFortune(3, 'Samantha', 'New York', 'full stack developer'));
+console.log(tellFortune(2, 'CrazyHo', 'Memphis', 'stay at home dad'));
+
+
+
+
