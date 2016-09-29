@@ -114,26 +114,82 @@ console.log(toonify('porky', 'thats all folks!'));
 
 
 
-var sentence = 'I need to get a little more sleep';
+
+
+var lloyd = 'We got no food, we got no jobs, our pets heads are falling off'
+
+var hannibal = 'I ate his liver with some fava beans and a nice chianti'
+
+// var split = statement.split(" ")
+
 
 function wordReverse(string) {
-    return sentence.reverse;
+    var split = string.split(" ");
+    return split.reverse();
 }
 
+console.log(wordReverse('hello this is a sample sentence'));
+console.log(wordReverse(lloyd));
+console.log(wordReverse(hannibal));
 
 
 
-// Comment: I will continue this effort during the week. I have not given up yet! Mwahahaha!
+// Comment: This was way easier the second time around! I think I just got impatient the first time 
+// and practicing functions every night this week has definitely helped
 
 
 
 // round 5
 
+var pi = 'Animals have souls I have seen it in their eyes'
 
+var dale = 'Im Dale but you have to call me Dragon'
 
+function letterReverse(string) {
+    var reArrange = string.split("").reverse().join("").split(" ").reverse().join(" ")
+    return reArrange;
+}
+
+console.log(pi);
+console.log(dale);
+
+// Comment: Once again, way easier. 
 
 
 // round 6
+
+var lloyd2 = ['So', 'youre', 'telling', 'me', 'theres', 'a', 'chance']
+
+var lloyd3 = ['That', 'John', 'Denvers', 'full', 'of', 'shit', 'man']
+
+function longest(array) {
+    var sortArray = array.sort(function(a,b){return b.length - a.length});
+    return sortArray[0];
+}
+
+console.log(longest(lloyd2));
+console.log(longest(lloyd3));
+
+
+
+// final round
+
+
+function capitalize(string) {
+    return string.toUpperCase();
+}
+
+
+function repMaster(string, funct) {
+    if (funct === capitalize){
+        return capitalize(string).concat(' proves that I am the rep MASTER!');
+    } else {
+        console.log('sorry toUpperCase is only available at this time');
+    };
+}
+
+console.log(repMaster('hello im david', capitalize));
+
 
 
 // functions review
